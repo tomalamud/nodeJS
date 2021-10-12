@@ -1,17 +1,11 @@
-function seRompe() {
-    return 2 + z;
-};
+const http = require('http');
 
-function inspection() {
-    try {
-        seRompe();
-    } catch(err) {
-        console.log('Se rompió por el siguiente motivo:');
-        console.group(' ');
-        console.log(err.message);
-        console.groupEnd(' ');
-    }
-}
+http.createServer((request, response) => {
+    console.log('Nueva petición.');
+    console.log(request.url);
 
-inspection();
+    response.write('Hola, ya se usar HTTP de NodeJS!');
+    response.end();
+}).listen(3000);
 
+console.log('Escuchando el puerto 3000');
