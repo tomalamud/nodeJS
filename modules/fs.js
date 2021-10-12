@@ -6,7 +6,7 @@ function read(path) {
     });
 }
 
-read(__dirname + '/archivo.txt');
+read(__dirname + '/assets/archivo.txt');
 
 function write(path, content) {
     fs.writeFile(path, content, (err) => {
@@ -18,7 +18,7 @@ function write(path, content) {
     });
 }
 
-write(__dirname + '/archivo2.txt', 'Hola');
+write(__dirname + '/assets/archivo2.txt', 'Hola');
 
 function dilete(path, cb) {
     fs.unlink(path, cb);
