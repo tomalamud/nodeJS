@@ -1,0 +1,1 @@
+Esto aún no está default en node, por eso se utiliza .mjs para hablar de modulos.
