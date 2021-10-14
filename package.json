@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon datos/stream.js"
+    "start": "nodemon modules/os.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "luxon": "^2.0.2"
+    "luxon": "^2.0.2",
+    "puppeteer": "^10.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
